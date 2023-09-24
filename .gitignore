@@ -1,0 +1,4 @@
+node_modules
+*.html
+jest-html-reporters-attach
+API/jest_html_reporters
