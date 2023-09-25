@@ -15,6 +15,6 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       return require('./cypress/plugins/index.js')(on, config)
     },
-    baseUrl: "http://localhost:3000/api",
+    baseUrl: "http://lojaebac.ebaconline.art.br/wp-json/wc/v3",
   },
 })
