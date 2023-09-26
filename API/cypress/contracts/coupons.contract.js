@@ -33,4 +33,4 @@ const couponsSchema = Joi.array().items({
         collection:Joi.array().items({href: Joi.string()})
     })
 })
-export default coupons;
+export default couponsSchema;
