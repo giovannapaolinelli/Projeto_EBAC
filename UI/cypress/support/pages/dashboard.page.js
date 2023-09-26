@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+
 export const dashboardPage = {
-    get siteName() { return cy.get('#wp-admin-bar-site-name > [aria-haspopup="true"]')}
+    get message() { return cy.get('.woocommerce-MyAccount-content > :nth-child(2)')}
 }

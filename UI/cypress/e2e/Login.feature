@@ -1,36 +1,36 @@
 Feature: Login
     Scenario Outline: Successful login
-        Given I visit EBAC Store
+        Given I visit EBAC Store login page
         When I log in with user "<user>" and pass "<pass>"
-        Then the admin dashboard page should be visible
+        Then the dashboard page should be visible
 
         Examples:
-        | user                   | pass                     |
-        | usuarioativo@teste.com | teste@123                |
+        | user                      | pass                     | userDisplay      |
+        | teste_giovanna3@teste.com | teste123                | teste_giovanna   |
 
     Scenario Outline: Login with the wrong password
-        Given I visit EBAC Store
+        Given I visit EBAC Store login page
         When I log in with user "<user>" and pass "<pass>"
-        Then a password error message must appear
+        Then a password error for the "<user>" message must appear
 
         Examples:
-            | user                   | pass                     |
-            | usuarioativo@teste.com | senhaerrada              |
+        | user                     | pass                     |
+        | teste_giovanna@teste.com | senhaerrada              |
         
     Scenario Outline: Login with the invalid user
-        Given I visit EBAC Store
+        Given I visit EBAC Store login page
         When I log in with user "<user>" and pass "<pass>"
         Then An unknown user error message must appear
 
         Examples:
-            | user                     | pass                 |
-            | usuarioinativo@teste.com | 123                  |
+        | user                     | pass                 |
+        | usuarioinativo@teste.com | 123                  |
     
     Scenario Outline: Block user
-        Given I visit EBAC Store
+        Given I visit EBAC Store login page
         When I log in with user "<user>" and pass "<pass>" three times
-        Then login should be blocked
+        Then login should be blocked for 15 min
 
         Examples:
-            | user    | pass                     |
-            | gerente | GD*peToHNJ1#c$sgk08EaYJQ |
+        | user                     | pass               |
+        | usuarioinativo@teste.com | abcdefg            |
