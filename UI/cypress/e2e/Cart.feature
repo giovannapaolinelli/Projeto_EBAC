@@ -9,3 +9,5 @@ Background:
     Scenario: Delete Product
         When I delete my product from the cart
         Then The cart must be empty
+
+    

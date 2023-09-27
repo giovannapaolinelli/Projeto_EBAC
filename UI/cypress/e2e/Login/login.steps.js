@@ -2,7 +2,7 @@
 
 import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
 import loginPage from "../../support/pages/login.page";
-import { dashboardPage } from "../../support/pages/dashboard.page";
+import dashboardPage from "../../support/pages/dashboard.page";
 
 
 Given('I visit EBAC Store login page', () => {
