@@ -36,6 +36,11 @@ class CheckoutPage {
             cy.get(field).should('be.visible')
         })
     }
+
+    payOrder(){
+        this.#terms.click()
+        this.#order.click()
+    }
 }
 
 module.exports = new CheckoutPage()
