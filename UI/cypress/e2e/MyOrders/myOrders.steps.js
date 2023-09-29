@@ -2,7 +2,6 @@
 
 import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
 import loginPage from "../../support/pages/login.page";
-import dashboardPage from "../../support/pages/dashboard.page";
 import myOrderPage from "../../support/pages/myOrder.page";
 import { productsPage } from "../../support/pages/products.page";
 import checkoutPage from "../../support/pages/checkout.page";
