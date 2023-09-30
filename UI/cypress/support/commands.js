@@ -39,17 +39,17 @@ Cypress.Commands.add('decreaseProduct', () => {
     cy.get('.minus').click()
 })
 
-Cypress.Commands.add('addProduct', () => {
+Cypress.Commands.add('addProduct', (productId, productUrl, quantity, productColor, productSize, variationId) => {
     const fd = new FormData()
-    fd.append('attribute_size', 'S')
-    fd.append('attribute_color', 'Blue')
-    fd.append('quantity', 1)
-    fd.append('add-to-cart', 2559)
-    fd.append('product_id', 2559)
-    fd.append('variation_id', 2574)
+    fd.append('attribute_size', productSize)
+    fd.append('attribute_color', productColor)
+    fd.append('quantity', quantity)
+    fd.append('add-to-cart', productId)
+    fd.append('product_id', productId)
+    fd.append('variation_id', variationId)
 
     cy.request({
-        url: `/product/abominable-hoodie/`,
+        url: `/product/${productUrl}/`,
         method: "POST",
         body: fd
     }).then((resp) => {
@@ -61,6 +61,6 @@ Cypress.Commands.add('addProduct', () => {
             cy.setCookie(name, value)
         })
 
-    cy.visit("/product/abominable-hoodie/")
+    cy.visit(`/product/${productUrl}/`)
     })
 })

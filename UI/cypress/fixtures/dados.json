@@ -39,7 +39,19 @@
     "product":[
         {
             "productId": "2559",
-            "productName": "Abominable Hoodie"
+            "productName": "Abominable Hoodie",
+            "productUrl": "abominable-hoodie",
+            "size": "S",
+            "color": "Blue",
+            "variationId": 2574
+        },
+        {
+            "productId": "4078",
+            "productName": "Augusta Pullover Jacket",
+            "productUrl": "augusta-pullover-jacket",
+            "size": "XL",
+            "color": "Orange",
+            "variationId": 4099
         }
     ]
 

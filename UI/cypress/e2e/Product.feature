@@ -2,22 +2,20 @@ Feature: Cart
 Background: 
     Given I visit a product page
     
-    Scenario: Add 1 product
-        When I edit the product in the cart
-        Then The cart must be updated
+    Scenario: Add numbers of product
+        When I add "<amount>" product to the cart
+        Then The product "<should>" be added
 
-    Scenario: Add 10 products
-        When I edit the product in the cart
-        Then The cart must be updated
-
-    Scenario: Add 11 elevent products
-        When I delete my product from the cart
-        Then The
+    Examples:
+        | amount     | should      |
+        | 1          | should      |
+        | 10         | should      |
+        | 11         | should not  |
 
     Scenario: Add 10 + 1 product to card
-        When I edit the product in the cart
-        Then The cart must be updated
+        When I add one more product to the cart
+        Then The product should be added
 
     Scenario: Add different products
-        When I delete my product from the cart
-        Then The
+        When I add diffent products to the cart
+        Then The products should be added

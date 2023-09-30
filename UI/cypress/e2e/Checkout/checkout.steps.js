@@ -6,13 +6,14 @@ import { orderPage } from "../../support/pages/order.page";
 import checkoutPage from "../../support/pages/checkout.page";
 
 const address = require('../../fixtures/dados.json')
+const product = require('../../fixtures/dados.json')
 
 Given('I visit EBAC Store products page', () => {
     cy.visit('/produtos/')
 })
 
 When('I add product to the cart and complete shopping', () => {
-    cy.addProduct()
+    cy.addProduct(product.product[0].productId, product.product[0].productUrl, 1, product.product[0].color, product.product[0].size, product.product[0].variationId )
     cy.checkout()
 })
 
