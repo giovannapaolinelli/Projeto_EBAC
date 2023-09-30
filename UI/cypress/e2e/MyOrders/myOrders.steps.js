@@ -64,7 +64,7 @@ Then('I should see my order details', () => {
 })
 
 Then('An empty order message should appear', () => {
-    myOrderPage.message.should('contain', 'Nenhum pedido feito ainda')
+    myOrderPage.message.should('contain', 'Nenhum pedido foi feito ainda')
 })
 
 Then('Product page should appear', () => {

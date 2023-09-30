@@ -3,8 +3,6 @@
 import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
 import loginPage from "../../support/pages/login.page";
 import myAccountPage from "../../support/pages/myAccount.page";
-import { productsPage } from "../../support/pages/products.page";
-import checkoutPage from "../../support/pages/checkout.page";
 
 const users = require('../../fixtures/users.json')
 
