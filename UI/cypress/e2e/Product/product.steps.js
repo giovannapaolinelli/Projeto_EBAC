@@ -1,11 +1,11 @@
 /// <reference types="cypress" />
 
 import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
-import ProductPage from "../../support/pages/products.page";
+import {productsPage} from "../../support/pages/products.page";
 
 const product = require('../../fixtures/dados.json')
 
-Given('I visit EBAC Store product page', () => {
+Given('I visit a product page', () => {
     cy.visit(`/produtos/${product.product[0].productUrl}`)
 })
 
@@ -13,20 +13,17 @@ When('I add {string} product to the cart', (amount) => {
     cy.addProduct(product.product[0].productId, product.product[0].productUrl, amount, product.product[0].color, product.product[0].size, product.product[0].variationId )
 })
 
-When('I add one more product to the cart', () => {
-    cy.addProduct(product.product[0].productId, product.product[0].productUrl, 10, product.product[0].color, product.product[0].size, product.product[0].variationId )
-    cy.addProduct(product.product[0].productId, product.product[0].productUrl, 1, product.product[0].color, product.product[0].size, product.product[0].variationId )
+When('I add {string} and {string} of product to the cart', (amount1, amount2) => {
+    cy.addProduct(product.product[0].productId, product.product[0].productUrl, amount1, product.product[0].color, product.product[0].size, product.product[0].variationId )
+    cy.addProduct(product.product[0].productId, product.product[0].productUrl, amount2, product.product[0].color, product.product[0].size, product.product[0].variationId )
 })
 
-When('I add diffent products to the cart', () => {
-    cy.addProduct(product.product[0].productId, product.product[0].productUrl, 10, product.product[0].color, product.product[0].size, product.product[0].variationId )
-    cy.addProduct(product.product[1].productId, product.product[1].productUrl, 10, product.product[1].color, product.product[1].size, product.product[1].variationId )
+When('I add {string} of a product and {string} of another product to the cart', (amount1, amount2) => {
+    cy.addProduct(product.product[0].productId, product.product[0].productUrl, amount1, product.product[0].color, product.product[0].size, product.product[0].variationId )
+    cy.addProduct(product.product[1].productId, product.product[1].productUrl, amount2, product.product[1].color, product.product[1].size, product.product[1].variationId )
 })
 
-Then('The product {string} be added', (should) => {
-    CataloguePage.message.should('contain', 'Produto adicionado')
+Then('{string} product should be added', (amount, should) => {
+    productsPage.cartIcon.should('contain', amount)
 })
 
-Then('The products should be added', () => {   
-    CataloguePage.compareBox.should('be.visible')
-})
