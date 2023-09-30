@@ -1,0 +1,22 @@
+{
+    "user1": {
+        "Username":"user1_ebac",
+        "Password":"psw!ebac@test"
+    },
+    "user2": {
+        "Username":"user2_ebac",
+        "Password":"psw!ebac@test"
+    },
+    "user3": {
+        "Username":"user3_ebac",
+        "Password":"psw!ebac@test"
+    },
+    "user4": {
+        "Username":"user4_ebac",
+        "Password":"psw!ebac@test" 
+    },
+    "user5": {
+        "Username":"user5_ebac",
+        "Password":"psw!ebac@test"
+    }    
+}
