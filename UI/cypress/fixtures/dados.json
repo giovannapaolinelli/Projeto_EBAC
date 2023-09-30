@@ -1,5 +1,5 @@
-[
-    {
+{
+    "userInfo": [{
         "nome": "Ana",
         "sobrenome": "Souza",
         "empresa": "Sabesp",
@@ -25,5 +25,22 @@
         "cep": "41020900", 
         "telefone": "93902020", 
         "email": "maria@teste.com"
-    }
-]
+    }],
+    "user":[
+        {
+            "username": "teste_giovanna_1234@teste.com",
+            "password": "teste123"
+        },
+        {
+            "username": "teste_giovanna5@teste.com",
+            "password": "teste123"
+        }
+    ],
+    "product":[
+        {
+            "productId": "2559",
+            "productName": "Abominable Hoodie"
+        }
+    ]
+
+}

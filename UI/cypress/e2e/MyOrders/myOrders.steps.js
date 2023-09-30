@@ -6,16 +6,16 @@ import myOrderPage from "../../support/pages/myOrder.page";
 import { productsPage } from "../../support/pages/products.page";
 import checkoutPage from "../../support/pages/checkout.page";
 
-const users = require('../../fixtures/users.json')
+const users = require('../../fixtures/dados.json')
 
 Given('I am logged with a user who has completed an order', () => {
     cy.visit('/minha-conta/')
-    loginPage.login(users[1].username,users[1].password)
+    loginPage.login(users.user[1].username,users.user[1].password)
 })
 
 Given('I am logged with a user who has not completed an order', () => {
     cy.visit('/minha-conta/')
-    loginPage.login(users[0].username,users[0].password)
+    loginPage.login(users.user[0].username,users.user[0].password)
 })
 
 When("I access my order page", () => {

@@ -18,17 +18,17 @@ When('I add product to the cart and complete shopping', () => {
 
 When('I fill checkout', () => {
     checkoutPage.fillCheckout(
-        address[1].nome,
-        address[1].sobrenome,
-        address[1].empresa,
-        address[1].pais,
-        address[1].endereco,
-        address[1].complemento,
-        address[1].cidade,
-        address[1].estado,
-        address[1].cep,
-        address[1].telefone,
-        address[1].email)
+        address.userInfo[1].nome,
+        address.userInfo[1].sobrenome,
+        address.userInfo[1].empresa,
+        address.userInfo[1].pais,
+        address.userInfo[1].endereco,
+        address.userInfo[1].complemento,
+        address.userInfo[1].cidade,
+        address.userInfo[1].estado,
+        address.userInfo[1].cep,
+        address.userInfo[1].telefone,
+        address.userInfo[1].email)
     checkoutPage.verifyField()
 })
 

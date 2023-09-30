@@ -4,28 +4,31 @@ import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
 import CataloguePage from "../../support/pages/catalogue.page";
 import {productDetailsPage} from "../../support/pages/productDetails.page"
 
+
+const product = require('../../fixtures/dados.json')
+
 Given('I visit EBAC Store products page', () => {
     cy.visit('/produtos/')
 })
 
 When('I click on a product', () => {
-    CataloguePage.clickProduct()
+    CataloguePage.clickProduct(product.product[0].productId)
 })
 
 When('I like a product', () => {
-    CataloguePage.addToWishList()
+    CataloguePage.addToWishList(product.product[0].productId)
 })
 
 When('I click on see options', () => {
-    CataloguePage.clickOptions()
+    CataloguePage.clickOptions(product.product[0].productId)
 })
 
 When('I click on compare products', () => {
-    CataloguePage.clickCompare()
+    CataloguePage.clickCompare(product.product[0].productId)
 })
 
 When('I click on visualize products', () => {
-    CataloguePage.clickVisualize()
+    CataloguePage.clickVisualize(product.product[0].productId)
 })
 
 Then('The product should be saved in my favorites', () => {
@@ -33,7 +36,7 @@ Then('The product should be saved in my favorites', () => {
 })
 
 Then('The product page should appear', () => {
-    productDetailsPage.productTitle.should('contain', 'Abominable Hoodie')
+    productDetailsPage.productTitle.should('contain', `${product.product[0].productName}`)
 
 })
 

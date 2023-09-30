@@ -4,11 +4,11 @@ import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
 import loginPage from "../../support/pages/login.page";
 import dashboardPage from "../../support/pages/dashboard.page";
 
-const users = require('../../fixtures/users.json')
+const users = require('../../fixtures/dados.json')
 
 Given('I login into my EBAC store account', () => {
     cy.visit('/minha-conta/')
-    loginPage.login(users[0].username,users[0].password)
+    loginPage.login(users.user[0].username,users.user[0].password)
 })
 
 When("I logout", () => {
