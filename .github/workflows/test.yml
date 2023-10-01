@@ -42,8 +42,7 @@ jobs:
       env:
         API_URL: ${{secrets.API_URL}}
       run:
-        echo $API_URL
-        npm run jest:test
+        npm run jest:test "$env:API_URL"
 
     - name: Publish Report
       uses: peaceiris/actions-gh-pages@v3
