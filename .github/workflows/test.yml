@@ -27,11 +27,24 @@ jobs:
             filename: coupon.test.js
       - name: Run cypress tests
         run: npm run cy:test
-      - name: Run API tests
-        run: npm run jest:test
       - name: Publish Report
         uses: peaceiris/actions-gh-pages@v3
         if: always()
         with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./allure-report
+  API:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run Jest
+      uses: stefanoeb/jest-action@1.0.3
+      with:
+          jestArgs: ./APItest/
+    - name: Publish Report
+      uses: peaceiris/actions-gh-pages@v3
+      if: always()
+      with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./allure-report
