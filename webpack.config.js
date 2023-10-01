@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = {
   mode: process.env.NODE_ENV,
   entry: {
-    customer: './performanceSimulations/coupon.test.js'
+    coupon: './performanceSimulations/coupon.test.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'), // eslint-disable-line

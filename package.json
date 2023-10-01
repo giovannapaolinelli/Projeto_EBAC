@@ -2,7 +2,7 @@
   "main": "index.js",
   "scripts": {
     "k6:pretest": "webpack",
-    "k6:test": "k6 run dist/customer.test.js",
+    "k6:test": "k6 run dist/coupon.test.js",
     "cy:test": "cypress run --browser chrome --reporter mochawesome --reporter-options reportDir=\"cypress/results\",overwrite=false,html=false,json=true",
     "cy:test:common": "npx cypress run",
     "wdio:test": "wdio run ./wdio.conf.js",

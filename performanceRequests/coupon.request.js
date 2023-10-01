@@ -2,7 +2,7 @@ import http from "k6/http"
 import Utils from "../performanceUtils/utils"
 import { check } from "k6"
 
-export default class customer {
+export default class Coupon {
 
     list(token){
         let response = http.get(`${Utils.getBaseUrl()}/coupons`, {
