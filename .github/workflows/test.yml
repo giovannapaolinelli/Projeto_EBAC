@@ -59,12 +59,12 @@ jobs:
         with:
           node-version: '18'
       - name: Cypress run
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v4.10
         continue-on-error: true
         with:
           install-command: npm install
           browser: chrome
-          start: "cypress open --config-file=cypress.config.js"
+          config-file: cypress.config.js
       - name: Publish Report
         uses: peaceiris/actions-gh-pages@v3
         with:
