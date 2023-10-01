@@ -38,8 +38,12 @@ jobs:
     - uses: actions/checkout@v1
     - name: Install Dependencies
       run: npm install
-    - name: Run Jest
-      run: npm run jest:test
+    - name: Run jest
+      env:
+        MY_SECRET_KEY: ${{API_URL}}
+      run:
+        echo $API_URL
+        npm run jest:test
 
     - name: Publish Report
       uses: peaceiris/actions-gh-pages@v3
