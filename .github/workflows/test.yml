@@ -22,11 +22,9 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Run local k6 test
-        uses: grafana/k6-action@v0.2.0
+        uses: grafana/k6-action@v0.3.0
         with:
             filename: coupon.test.js
-      - name: Run cypress tests
-        run: npm run cy:test
       - name: Publish Report
         uses: peaceiris/actions-gh-pages@v3
         if: always()
@@ -39,12 +37,30 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run Jest
-      uses: stefanoeb/jest-action@1.0.3
-      with:
-          jestArgs: ./APItest/
+      run: npm run jest:test
+
     - name: Publish Report
       uses: peaceiris/actions-gh-pages@v3
       if: always()
       with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./allure-report
+          
+  Cypress:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        continue-on-error: true
+        with:
+          install-command: npm install
+          browser: chrome
+      - name: Publish Report
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./mochawesome-report
