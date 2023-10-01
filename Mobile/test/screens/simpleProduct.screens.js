@@ -1,12 +1,4 @@
 class AddProducts {
-    get #productsMenu(){
-        return $('id:products')
-    }
-
-    get #addProductButton(){
-        return $('id:addProductButton')
-    }
-
     get #simpleProduct(){
         return $('android=new UiSelector().text("Simple physical product")')
     }
@@ -33,14 +25,6 @@ class AddProducts {
 
     get #publishProduct(){
         return $('id:menu_publish')
-    }
-    
-    async clickAddProductMenu(){
-        await this.#productsMenu.click()
-    }
-
-    async clickAddProductBtn(){
-        await this.#addProductButton.click()
     }
 
     async clickAddSimpleProduct(){

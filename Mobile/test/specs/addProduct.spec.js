@@ -1,18 +1,18 @@
 const homeScreens = require("../screens/home.screens");
 const loginScreens = require("../screens/login.screens");
-const myStoreScreens = require("../screens/myStore.screens");
+const Products = require("../screens/products.screens");
 const simpleProductScreens = require("../screens/simpleProduct.screens");
 
-const users = require('../../data/dados.json')
+const data = require('../../data/dados.json')
 
 describe('Add New Simple Product', () =>{
         it('should add new simple product', async () => {
-            await simpleProductScreens.clickAddProductMenu()
-            await simpleProductScreens.clickAddProductBtn()
+            await Products.clickAddProductMenu()
+            await Products.clickAddProductBtn()
             await simpleProductScreens.clickAddSimpleProduct()
-            await simpleProductScreens.addProductName("Denim Pants")
-            await simpleProductScreens.addProductValue("80", "50")
+            await simpleProductScreens.addProductName(data.product[1].productName)
+            await simpleProductScreens.addProductValue(data.product[1].productValue, data.product[1].productSaleValue)
             await simpleProductScreens.publishProduct()
-            expect (await simpleProductScreens.findProductList("Denim Pants")).toBeDisplayed()
+            expect (await simpleProductScreens.findProductList(data.product[1].productName)).toBeDisplayed()
         });
 });

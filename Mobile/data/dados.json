@@ -5,6 +5,11 @@
     "product":[
         {
             "productName": "Abominable Hoodie"
+        },
+        {
+            "productName":"Denim Pants",
+            "productValue": "90",
+            "productSaleValue": "70"
         }
     ]
 

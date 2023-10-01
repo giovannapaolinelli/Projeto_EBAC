@@ -3,6 +3,14 @@ class Products {
         return $('id:products')
     }
 
+    get #navigateUp(){
+        return $('~Navigate up')
+    }
+
+    get #addProductButton(){
+        return $('id:addProductButton')
+    }
+
     get #filters(){
         return $('id:btn_product_filter')
     }
@@ -35,6 +43,14 @@ class Products {
         await this.#sort.click()
     }
 
+    async clickAddProductMenu(){
+        await this.#productsMenu.click()
+    }
+
+    async clickAddProductBtn(){
+        await this.#addProductButton.click()
+    }
+    
     async searchProduct(name){
         await this.#search.click()
         await this.#searchBar.setValue(name)
