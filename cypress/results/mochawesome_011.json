@@ -1,0 +1,181 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-01T14:23:43.233Z",
+    "end": "2023-10-01T14:24:13.997Z",
+    "duration": 30764,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c529a71f-fd1a-4316-9f8a-5f5d7a6ded01",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Catalogue.feature",
+      "file": "cypress\\e2e\\Catalogue.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d24ff4ce-2d4d-4687-afc6-0dd20de593ce",
+          "title": "Catalogue Account",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Click on product",
+              "fullTitle": "Catalogue Account Click on product",
+              "timedOut": null,
+              "duration": 8939,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "a827a809-9b38-4dfb-9f30-1944bfd284a6",
+              "parentUUID": "d24ff4ce-2d4d-4687-afc6-0dd20de593ce",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Save product",
+              "fullTitle": "Catalogue Account Save product",
+              "timedOut": null,
+              "duration": 4099,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "c5a615b1-9d45-4b70-9e5d-7391a8ebf52a",
+              "parentUUID": "d24ff4ce-2d4d-4687-afc6-0dd20de593ce",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "See options product",
+              "fullTitle": "Catalogue Account See options product",
+              "timedOut": null,
+              "duration": 7130,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "44ac272e-ee5f-431c-9e72-b5dcb971577d",
+              "parentUUID": "d24ff4ce-2d4d-4687-afc6-0dd20de593ce",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Compare products",
+              "fullTitle": "Catalogue Account Compare products",
+              "timedOut": null,
+              "duration": 3011,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "3177df3b-cdd1-451e-82a3-606aae7de7bf",
+              "parentUUID": "d24ff4ce-2d4d-4687-afc6-0dd20de593ce",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visualize products",
+              "fullTitle": "Catalogue Account Visualize products",
+              "timedOut": null,
+              "duration": 4390,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "1d9bd865-3c5d-44e4-aee7-58f1ee18a9d1",
+              "parentUUID": "d24ff4ce-2d4d-4687-afc6-0dd20de593ce",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a827a809-9b38-4dfb-9f30-1944bfd284a6",
+            "c5a615b1-9d45-4b70-9e5d-7391a8ebf52a",
+            "44ac272e-ee5f-431c-9e72-b5dcb971577d",
+            "3177df3b-cdd1-451e-82a3-606aae7de7bf",
+            "1d9bd865-3c5d-44e4-aee7-58f1ee18a9d1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 27569,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

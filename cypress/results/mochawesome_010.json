@@ -1,0 +1,132 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-10-01T14:23:16.122Z",
+    "end": "2023-10-01T14:23:26.919Z",
+    "duration": 10797,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e10125dd-e671-404c-aab6-0b4ca2846547",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Cart.feature",
+      "file": "cypress\\e2e\\Cart.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "59821d2b-0365-47bb-a7fc-1b607e5c0a03",
+          "title": "Cart",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Edit Product",
+              "fullTitle": "Cart Edit Product",
+              "timedOut": null,
+              "duration": 5367,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "CypressError: `cy.request()` failed on:\n\nhttp://lojaebac.ebaconline.art.br/product/undefined/\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: http://lojaebac.ebaconline.art.br/product/undefined/\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"content-type\": \"multipart/form-data; boundary=----CypressFormDataBoundary\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"cookie\": \"tk_r3d=%22%22; tk_lr=%22%22; tk_or=%22%22\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 613\n}\nBody: {}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 404 - Not Found\nHeaders: {\n  \"date\": \"Sun, 01 Oct 2023 14:23:23 GMT\",\n  \"server\": \"Apache/2.4.38 (Debian)\",\n  \"x-powered-by\": \"PHP/7.4.19\",\n  \"expires\": \"Wed, 11 Jan 1984 05:00:00 GMT\",\n  \"cache-control\": \"no-cache, must-revalidate, max-age=0\",\n  \"link\": \"<http://lojaebac.ebaconline.art.br/wp-json/>; rel=\\\"https://api.w.org/\\\"\",\n  \"keep-alive\": \"timeout=5, max=89\",\n  \"connection\": \"Keep-Alive\",\n  \"transfer-encoding\": \"chunked\",\n  \"content-type\": \"text/html; charset=UTF-8\"\n}\nBody: {}\n\n\nhttps://on.cypress.io/request",
+                "estack": "CypressError: `cy.request()` failed on:\n\nhttp://lojaebac.ebaconline.art.br/product/undefined/\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: http://lojaebac.ebaconline.art.br/product/undefined/\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"content-type\": \"multipart/form-data; boundary=----CypressFormDataBoundary\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"cookie\": \"tk_r3d=%22%22; tk_lr=%22%22; tk_or=%22%22\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 613\n}\nBody: {}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 404 - Not Found\nHeaders: {\n  \"date\": \"Sun, 01 Oct 2023 14:23:23 GMT\",\n  \"server\": \"Apache/2.4.38 (Debian)\",\n  \"x-powered-by\": \"PHP/7.4.19\",\n  \"expires\": \"Wed, 11 Jan 1984 05:00:00 GMT\",\n  \"cache-control\": \"no-cache, must-revalidate, max-age=0\",\n  \"link\": \"<http://lojaebac.ebaconline.art.br/wp-json/>; rel=\\\"https://api.w.org/\\\"\",\n  \"keep-alive\": \"timeout=5, max=89\",\n  \"connection\": \"Keep-Alive\",\n  \"transfer-encoding\": \"chunked\",\n  \"content-type\": \"text/html; charset=UTF-8\"\n}\nBody: {}\n\n\nhttps://on.cypress.io/request\n    at <unknown> (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:149327:80)\n    at tryCatcher (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromise0 (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:16781:10)\n    at Promise._settlePromises (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:16861:18)\n    at _drainQueueStep (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:13451:12)\n    at _drainQueue (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:13444:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:13460:5)\n    at Async.drainQueues (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:13330:14)\nFrom Your Spec Code:\n    at Context.eval (cypress/support/commands.js:51:7)",
+                "diff": null
+              },
+              "uuid": "c3f89e8b-ced3-422b-b16d-e08cd2b9a65f",
+              "parentUUID": "59821d2b-0365-47bb-a7fc-1b607e5c0a03",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Delete Product",
+              "fullTitle": "Cart Delete Product",
+              "timedOut": null,
+              "duration": 4544,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "CypressError: `cy.request()` failed on:\n\nhttp://lojaebac.ebaconline.art.br/product/undefined/\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: http://lojaebac.ebaconline.art.br/product/undefined/\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"content-type\": \"multipart/form-data; boundary=----CypressFormDataBoundary\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"cookie\": \"tk_r3d=%22%22; tk_lr=%22%22; tk_or=%22%22\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 613\n}\nBody: {}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 404 - Not Found\nHeaders: {\n  \"date\": \"Sun, 01 Oct 2023 14:23:28 GMT\",\n  \"server\": \"Apache/2.4.38 (Debian)\",\n  \"x-powered-by\": \"PHP/7.4.19\",\n  \"expires\": \"Wed, 11 Jan 1984 05:00:00 GMT\",\n  \"cache-control\": \"no-cache, must-revalidate, max-age=0\",\n  \"link\": \"<http://lojaebac.ebaconline.art.br/wp-json/>; rel=\\\"https://api.w.org/\\\"\",\n  \"keep-alive\": \"timeout=5, max=86\",\n  \"connection\": \"Keep-Alive\",\n  \"transfer-encoding\": \"chunked\",\n  \"content-type\": \"text/html; charset=UTF-8\"\n}\nBody: {}\n\n\nhttps://on.cypress.io/request",
+                "estack": "CypressError: `cy.request()` failed on:\n\nhttp://lojaebac.ebaconline.art.br/product/undefined/\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: http://lojaebac.ebaconline.art.br/product/undefined/\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"content-type\": \"multipart/form-data; boundary=----CypressFormDataBoundary\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"cookie\": \"tk_r3d=%22%22; tk_lr=%22%22; tk_or=%22%22\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-length\": 613\n}\nBody: {}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 404 - Not Found\nHeaders: {\n  \"date\": \"Sun, 01 Oct 2023 14:23:28 GMT\",\n  \"server\": \"Apache/2.4.38 (Debian)\",\n  \"x-powered-by\": \"PHP/7.4.19\",\n  \"expires\": \"Wed, 11 Jan 1984 05:00:00 GMT\",\n  \"cache-control\": \"no-cache, must-revalidate, max-age=0\",\n  \"link\": \"<http://lojaebac.ebaconline.art.br/wp-json/>; rel=\\\"https://api.w.org/\\\"\",\n  \"keep-alive\": \"timeout=5, max=86\",\n  \"connection\": \"Keep-Alive\",\n  \"transfer-encoding\": \"chunked\",\n  \"content-type\": \"text/html; charset=UTF-8\"\n}\nBody: {}\n\n\nhttps://on.cypress.io/request\n    at <unknown> (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:149327:80)\n    at tryCatcher (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromise0 (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:16781:10)\n    at Promise._settlePromises (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:16861:18)\n    at _drainQueueStep (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:13451:12)\n    at _drainQueue (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:13444:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:13460:5)\n    at Async.drainQueues (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:13330:14)\nFrom Your Spec Code:\n    at Context.eval (cypress/support/commands.js:51:7)",
+                "diff": null
+              },
+              "uuid": "417375c2-acdf-43da-8859-829edab2bea9",
+              "parentUUID": "59821d2b-0365-47bb-a7fc-1b607e5c0a03",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "c3f89e8b-ced3-422b-b16d-e08cd2b9a65f",
+            "417375c2-acdf-43da-8859-829edab2bea9"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 9911,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

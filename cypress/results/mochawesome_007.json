@@ -1,0 +1,171 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 2,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-10-01T14:11:05.638Z",
+    "end": "2023-10-01T14:12:02.251Z",
+    "duration": 56613,
+    "testsRegistered": 4,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5dc94336-e7f1-4dcb-952e-042e69976584",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Login.feature",
+      "file": "cypress\\e2e\\Login.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0a5c6a06-313b-43f4-9f6d-c5a74b580eb2",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Successful login (example #1)",
+              "fullTitle": "Login Successful login (example #1)",
+              "timedOut": null,
+              "duration": 14628,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.woocommerce-MyAccount-content > :nth-child(2)`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.woocommerce-MyAccount-content > :nth-child(2)`, but never found it.\n    at Context.eval (cypress/e2e/Login/login.steps.js:23:26)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
+                "diff": null
+              },
+              "uuid": "7df80d49-ccfb-4b98-a549-69a08291ecce",
+              "parentUUID": "0a5c6a06-313b-43f4-9f6d-c5a74b580eb2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login with the wrong password (example #1)",
+              "fullTitle": "Login Login with the wrong password (example #1)",
+              "timedOut": null,
+              "duration": 7927,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "8d28a544-3462-4b2e-997d-af4d0ff37eb4",
+              "parentUUID": "0a5c6a06-313b-43f4-9f6d-c5a74b580eb2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login with the invalid user (example #1)",
+              "fullTitle": "Login Login with the invalid user (example #1)",
+              "timedOut": null,
+              "duration": 8258,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "a06226fb-ad1c-43fd-8b69-567577556a29",
+              "parentUUID": "0a5c6a06-313b-43f4-9f6d-c5a74b580eb2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Block user (example #1)",
+              "fullTitle": "Login Block user (example #1)",
+              "timedOut": null,
+              "duration": 24942,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<input.button>' to be 'disabled'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<input.button>' to be 'disabled'\n    at Context.eval (cypress/e2e/Login/login.steps.js:35:23)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
+                "diff": null
+              },
+              "uuid": "7064acb4-7d6a-4094-b82a-60193ef2764a",
+              "parentUUID": "0a5c6a06-313b-43f4-9f6d-c5a74b580eb2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8d28a544-3462-4b2e-997d-af4d0ff37eb4",
+            "a06226fb-ad1c-43fd-8b69-567577556a29"
+          ],
+          "failures": [
+            "7df80d49-ccfb-4b98-a549-69a08291ecce",
+            "7064acb4-7d6a-4094-b82a-60193ef2764a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 55755,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

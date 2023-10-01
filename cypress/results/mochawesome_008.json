@@ -1,0 +1,200 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-01T14:12:31.857Z",
+    "end": "2023-10-01T14:13:39.582Z",
+    "duration": 67725,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f2f21229-88bf-433a-9e7c-1c7f69f3eead",
+      "title": "",
+      "fullFile": "cypress\\e2e\\MyAccount.feature",
+      "file": "cypress\\e2e\\MyAccount.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "815ea1d9-f4f3-4350-8e4b-71d58dd781fe",
+          "title": "My Account",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Logout",
+              "fullTitle": "My Account Logout",
+              "timedOut": null,
+              "duration": 16349,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "3e028c04-4eb2-42e2-a02a-7669bb516038",
+              "parentUUID": "815ea1d9-f4f3-4350-8e4b-71d58dd781fe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Logoff from dashboard message",
+              "fullTitle": "My Account Logoff from dashboard message",
+              "timedOut": null,
+              "duration": 10715,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "b94c77fd-3dca-4a83-8341-13960a729642",
+              "parentUUID": "815ea1d9-f4f3-4350-8e4b-71d58dd781fe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Go to orders",
+              "fullTitle": "My Account Go to orders",
+              "timedOut": null,
+              "duration": 9669,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "b5868a20-c91f-4a9b-bf9d-0410e6f1e22d",
+              "parentUUID": "815ea1d9-f4f3-4350-8e4b-71d58dd781fe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Go to addresses",
+              "fullTitle": "My Account Go to addresses",
+              "timedOut": null,
+              "duration": 8833,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "4fb56c9b-24dd-40e0-b7aa-b53a26e3df8d",
+              "parentUUID": "815ea1d9-f4f3-4350-8e4b-71d58dd781fe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Go to downloads",
+              "fullTitle": "My Account Go to downloads",
+              "timedOut": null,
+              "duration": 9924,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "cfffc99a-4559-4f51-91cd-a1c9fe54c654",
+              "parentUUID": "815ea1d9-f4f3-4350-8e4b-71d58dd781fe",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Go to account details",
+              "fullTitle": "My Account Go to account details",
+              "timedOut": null,
+              "duration": 11240,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "eebfe39b-7934-46e2-a274-3e38c8fffcd8",
+              "parentUUID": "815ea1d9-f4f3-4350-8e4b-71d58dd781fe",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3e028c04-4eb2-42e2-a02a-7669bb516038",
+            "b94c77fd-3dca-4a83-8341-13960a729642",
+            "b5868a20-c91f-4a9b-bf9d-0410e6f1e22d",
+            "4fb56c9b-24dd-40e0-b7aa-b53a26e3df8d",
+            "cfffc99a-4559-4f51-91cd-a1c9fe54c654",
+            "eebfe39b-7934-46e2-a274-3e38c8fffcd8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 66730,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
