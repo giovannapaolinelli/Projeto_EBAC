@@ -7,7 +7,6 @@
     "cy:test:common": "npx cypress run",
     "wdio:test": "wdio run ./wdio.conf.js",
     "jest:test": "jest",
-    "cy:run": "npx cypress run",
     "cy:report": "npx mochawesome-merge ./mochawesome-report/mochawesome*.json > C:\\repositorio\\teste-api-cypress\\mochawesome-report\\report.json && npx marge C:\\repositorio\\teste-api-cypress\\mochawesome-report\\report.json",
     "cy:run-ci": "start-server-and-test start http://localhost:3000/api-doc test"
   },

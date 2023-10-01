@@ -14,9 +14,8 @@ exports.config = {
     // Define which test specs should run. The pattern is relative to the directory
     // of the configuration file being run.
     specs:[
-            ["./test/specs/login.spec.js",
-            "./test/specs/addProduct.spec.js",
-            "./test/specs/catalogue.spec.js"]
+            ["./mobileTest/specs/login.spec.js",
+            "./mobileTest/specs/catalogue.spec.js"]
 
     ],
     // ============

@@ -13,7 +13,7 @@ describe('Product Catalogue', () =>{
             expect (await Products.getFilterTitle()).toEqual('Filters')
         });
         it('should search products', async () => {
-            await simpleProductScreens.clickAddProductMenu()
+            await Products.clickAddProductMenu()
             await Products.searchProduct(data.product[0].productName)
             expect (await Products.findProductList(data.product[0].productName)).toBeDisplayed()
         });
