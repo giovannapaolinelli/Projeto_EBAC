@@ -15,6 +15,7 @@ exports.config = {
     // of the configuration file being run.
     specs:[
             ["./mobileTest/specs/login.spec.js",
+            "./mobileTest/specs/addProduct.spec.js",
             "./mobileTest/specs/catalogue.spec.js"]
 
     ],
@@ -23,7 +24,7 @@ exports.config = {
     // ============
     maxInstances: 10,
     capabilities: [{
-        //"platformName": "Android",
+        // "platformName": "Android",
         // BrowserStack configuration
         "project": "EBAC-WooCommerce",
         "build": "browserstack-build-1",
@@ -32,13 +33,13 @@ exports.config = {
         "os_version": "9.0",
         "app": 'bs://546234b615398611f041e1e25c3a0d6b680a3ac1',
         //Local
-    //    "appium:platformVersion": "12.0",
-    //    "appium:deviceName": "Pixel 3 API 31",
-    //    "appium:automationName": "UiAutomator2",
-    //    "appium:appWaitActivity": ".ui.login.LoginActivity",
-    //    "appium:appPackage": "com.woocommerce.android",
-    //    "appium:appActivity": ".ui.main.MainActivity",
-    //    "appium:autoGrantPermissions": true
+    //    "platformVersion": "11.0",
+    //    "deviceName": "Pixel 2 API 30",
+    //    "automationName": "UiAutomator2",
+    //    "appWaitActivity": ".ui.login.LoginActivity",
+    //    "appPackage": "com.woocommerce.android",
+    //    "appActivity": ".ui.main.MainActivity",
+    //    "autoGrantPermissions": true
     }],
     //
     // ===================

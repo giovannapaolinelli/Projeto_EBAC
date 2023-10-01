@@ -12,11 +12,11 @@ class AddProducts {
     }
 
     get #regularPrice(){
-        return $('android=new UiSelector().text("Regular price")')
+        return $('id:product_regular_price')
     }
 
     get #salePrice(){
-        return $('android=new UiSelector().text("Sale price")')
+        return $('id:product_sale_price')
     }
 
     get #navigateUp(){
@@ -35,15 +35,14 @@ class AddProducts {
         await this.#editProductName.setValue(name)
     }
 
-    async addProductValue(regularValue, saleValue){
+    async addProductValue(){
         await this.#editProductValue.click()
-        await this.#regularPrice.setValue(regularValue)
-        await this.#salePrice.setValue(saleValue)
         await this.#navigateUp.click()
     }
 
     async publishProduct(){
         await this.#publishProduct.click()
+        await this.#navigateUp.click()
     }
 
     async findProductList(productName){

@@ -28,11 +28,7 @@ class Products {
     }
 
     get filterTitle(){
-        return $('id:toolbar')
-    }
-    
-    async getFilterTitle(){
-        return await this.filterTitle.getText()
+        return $('android=new UiSelector().text("Filters")')
     }
 
     async clickFilter(){
@@ -60,6 +56,10 @@ class Products {
         const product = $('android=new UiSelector().text("'+productName+'")');
         product.scrollIntoView();
         return await $('android=new UiSelector().text("'+productName+'")')
+    }
+
+    async exit(){
+        await this.#navigateUp.click()
     }
 
 }
