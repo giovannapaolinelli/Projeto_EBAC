@@ -14,28 +14,32 @@ exports.config = {
     // Define which test specs should run. The pattern is relative to the directory
     // of the configuration file being run.
     specs:[
-        './test/specs/**/*.js'
+            ["./test/specs/login.spec.js",
+            "./test/specs/addProduct.spec.js",
+            "./test/specs/catalogue.spec.js"]
+
     ],
     // ============
     // Capabilities
     // ============
     maxInstances: 10,
     capabilities: [{
-        "platformName": "Android",
+        //"platformName": "Android",
         // BrowserStack configuration
-        // "project": "EBAC-WooCommerce",
-        // "build": "browserstack-build-1",
-        // "name": "local_test",
-        // "device": "Google Pixel 3",
-        // "os_version": "9.0",
-        // "app": 'bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c'
-       "appium:platformVersion": "11.0",
-       "appium:deviceName": "EBAC-QA",
-       "appium:automationName": "UiAutomator2",
-       "appium:appWaitActivity": ".ui.login.LoginActivity",
-       "appium:appPackage": "com.woocommerce.android",
-       "appium:appActivity": ".ui.main.MainActivity",
-       "appium:autoGrantPermissions": true
+        "project": "EBAC-WooCommerce",
+        "build": "browserstack-build-1",
+        "name": "local_test",
+        "device": "Google Pixel 3",
+        "os_version": "9.0",
+        "app": 'bs://546234b615398611f041e1e25c3a0d6b680a3ac1',
+        //Local
+    //    "appium:platformVersion": "12.0",
+    //    "appium:deviceName": "Pixel 3 API 31",
+    //    "appium:automationName": "UiAutomator2",
+    //    "appium:appWaitActivity": ".ui.login.LoginActivity",
+    //    "appium:appPackage": "com.woocommerce.android",
+    //    "appium:appActivity": ".ui.main.MainActivity",
+    //    "appium:autoGrantPermissions": true
     }],
     //
     // ===================
@@ -44,14 +48,16 @@ exports.config = {
     // Define all options that are relevant for the WebdriverIO instance here
     logLevel: 'info',
     bail: 0,
+    // UseLocal
     // baseUrl: 'http://localhost',
-    port: 4723,
-    // Use with BrowserStack
-    // user: process.env.BROWSERSTACK_USERNAME || 'giovannashinhe_r0QjYc',
-    // key: process.env.BROWSERSTACK_ACCESS_KEY || 'gNoJ2z35YoYxKHnsTs1A',
-    // services: ['browserstack'],
-    services: ['appium'],
     // path: '/wd/hub',
+    // services: ['appium'],
+    // port: 4723,
+    // Use with BrowserStack
+    user: process.env.BROWSERSTACK_USERNAME || 'giovannashinhe_r0QjYc',
+    key: process.env.BROWSERSTACK_ACCESS_KEY || 'gNoJ2z35YoYxKHnsTs1A',
+    services: ['browserstack'],
+    
     // Default timeout for all waitFor* commands.
     waitforTimeout: 100000,
     connectionRetryTimeout: 120000,
