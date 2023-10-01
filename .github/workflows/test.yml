@@ -24,7 +24,7 @@ jobs:
       - name: Run local k6 test
         uses: grafana/k6-action@v0.2.0
         with:
-            filename: performanceSimulations/coupon.test.js
+            filename: ./performanceSimulations/coupon.test.js
       - name: Run cypress tests
         run: npm run cy:test
       - name: Run API tests
