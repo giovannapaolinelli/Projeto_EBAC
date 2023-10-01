@@ -21,10 +21,10 @@ jobs:
           node-version: '14'
       - name: Install Dependencies
         run: npm install
-      - name: Run k6 pretest tests
-        run: npm run k6:pretest
-      - name: Run k6 tests
-        run: npm run k6:test
+      - name: Run local k6 test
+        uses: grafana/k6-action@v0.2.0
+        with:
+            filename: performanceSimulations/coupon.test.js
       - name: Run cypress tests
         run: npm run cy:test
       - name: Run API tests
